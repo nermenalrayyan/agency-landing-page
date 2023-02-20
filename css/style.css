@@ -246,14 +246,14 @@ header .items .searchBar form button i {
   }
   header .items #toggleMenu i {
     font-size: 25px !important;
-    color: var(--color-white);
+    color: var(--color-dark-green);
     transition: all 0.6s ease-in-out;
   }
   header .items #toggleMenu i:hover {
-    color: var(--color-dark-green);
+    color: rgba(15, 81, 50, 0.6588235294);
   }
   header .items #toggleMenu.active i {
-    color: var(--color-dark-green);
+    color: rgba(15, 81, 50, 0.6588235294);
   }
   header .items #navBar {
     display: none !important;

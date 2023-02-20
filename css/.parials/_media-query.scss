@@ -56,17 +56,18 @@
 
                 i {
                     font-size: 25px !important;
-                    color: var(--color-white);
+                    color: var(--color-dark-green);
+                    
                     transition: all .6s ease-in-out;
 
                     &:hover{
-                        color: var(--color-dark-green);
+                    color: #0f5132a8;
                     }
                 }
 
                 &.active {
                     i {
-                        color: var(--color-dark-green);
+                        color: #0f5132a8;
                     }
                 }
             }
