@@ -24,10 +24,9 @@
             height: 81vh;
             
             .left-section {
-                width: 55% !important;
+                text-align: left !important;
             }
         }
-
     }
 }
 
@@ -182,14 +181,12 @@
             
             .left-section {
                 text-align: left !important;
-
-                h1{
-                    text-align: left !important;
-                }
             }
             
             .right-section {
-                width: 530px !important;
+
+                width: 439px !important;
+                // width: 530px !important;
                 height: 407px !important;
             }
         }
