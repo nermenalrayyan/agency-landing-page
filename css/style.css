@@ -69,6 +69,7 @@ a, button {
   --color-green: #2CB96C;
   --color-dark-green: #0f5132;
   --color-black: #222221;
+  --color-blue: #095073;
 }
 
 header .items {
@@ -183,7 +184,7 @@ header .items .searchBar form button i {
 @media (max-width: 991px) {
   body {
     background-image: url(..//images/background2.svg);
-    background-position: center center;
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
   }
