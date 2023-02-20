@@ -1,0 +1,165 @@
+html
+{
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth; // يحعل الحركه في الموقع ناعمه وليست سريعه
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    height: 100vh;
+    // background-image: url(..//images/background1.svg);
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // font-weight: bold !important;
+    // text-transform: capitalize;
+}
+
+/* Start Link */
+a
+{
+    text-decoration: none;
+    color: var();
+    font-size: 17px;
+    transition: .6s ease-in;
+    
+    &:hover, &.active {
+        color: var(--color-blue) !important;
+    }
+}
+
+.link
+{
+    // color: #ffffff;
+    padding: 10px;
+    // font-size: 17px;
+}
+
+.more
+{
+    text-align: center;
+}
+/* End Link */
+
+
+/* Start Text */ 
+p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2
+{
+    text-transform: capitalize;
+}
+
+
+
+h1
+{
+    color: var(--color-blue) !important;
+    font-size: 37px !important;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+/* End Text */ 
+
+
+button, select
+{
+    outline: none !important;
+}
+
+
+ul {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+
+    li
+    {
+        list-style: none;
+    }
+}
+
+
+a, button
+{
+    transition: .6s;
+}
+
+
+section
+{
+    margin: 20px 0;
+
+    .item
+    {
+        background-color: var();
+        border: 3px solid var();
+        padding: 1rem;
+        border-radius: 25px;
+
+        &.item-small
+        {
+            width: 60%;
+            position: relative;
+            left: 21%;
+        }
+
+        section
+        {
+            border: 2px solid var();
+            padding: 0;
+            border-radius: 25px;
+            background-color: var();
+            margin: 1rem;
+            width: 97%;
+
+
+
+            img
+            {
+                width: 100%;
+                height: 100%;
+            }
+        
+            .text-main
+            {
+                padding: 1rem;
+                height: 100%;
+        
+                p
+                {
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+
+.social-links
+{
+    display: inline-flex;
+    margin-bottom: 0;
+
+    li
+    {
+        margin-right: 1.5rem;
+        width: 30px;
+        transition: .3s ease;
+
+        a
+        {
+           font-size: 28px !important;
+
+            &:hover
+            {
+                font-size: 40px !important;
+            }
+        }
+    }
+}
+

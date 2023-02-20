@@ -1,0 +1,344 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  height: 100vh;
+}
+
+/* Start Link */
+a {
+  text-decoration: none;
+  color: var();
+  font-size: 17px;
+  transition: 0.6s ease-in;
+}
+a:hover, a.active {
+  color: var(--color-blue) !important;
+}
+
+.link {
+  padding: 10px;
+}
+
+.more {
+  text-align: center;
+}
+
+/* End Link */
+/* Start Text */
+p, h1, h2, h3, h4, h5, h6, a, button, .button-1, .button-2 {
+  text-transform: capitalize;
+}
+
+h1 {
+  color: var(--color-blue) !important;
+  font-size: 37px !important;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+/* End Text */
+button, select {
+  outline: none !important;
+}
+
+ul {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+ul li {
+  list-style: none;
+}
+
+a, button {
+  transition: 0.6s;
+}
+
+section {
+  margin: 20px 0;
+}
+section .item {
+  background-color: var();
+  border: 3px solid var();
+  padding: 1rem;
+  border-radius: 25px;
+}
+section .item.item-small {
+  width: 60%;
+  position: relative;
+  left: 21%;
+}
+section .item section {
+  border: 2px solid var();
+  padding: 0;
+  border-radius: 25px;
+  background-color: var();
+  margin: 1rem;
+  width: 97%;
+}
+section .item section img {
+  width: 100%;
+  height: 100%;
+}
+section .item section .text-main {
+  padding: 1rem;
+  height: 100%;
+}
+section .item section .text-main p {
+  line-height: 22px;
+}
+
+.social-links {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+.social-links li {
+  margin-right: 1.5rem;
+  width: 30px;
+  transition: 0.3s ease;
+}
+.social-links li a {
+  font-size: 28px !important;
+}
+.social-links li a:hover {
+  font-size: 40px !important;
+}
+
+:root {
+  --color-white: #FFFFFF;
+  --color-green: #2CB96C;
+  --color-dark-green: #0f5132;
+  --color-black: #222221;
+}
+
+header .items {
+  height: 116px;
+}
+header .items .navBar {
+  gap: 35px 35px;
+}
+header .items .navBar ul {
+  align-items: flex-start;
+  position: relative;
+  gap: 25px 25px;
+}
+header .items .navBar ul a {
+  color: var(--color-black);
+  transition: 0.6s ease-in-out;
+  padding-top: 48px;
+  position: relative;
+}
+header .items .navBar ul a:hover, header .items .navBar ul a.active {
+  color: var(--color-green) !important;
+}
+header .items .navBar ul a:hover::before, header .items .navBar ul a.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 100%;
+  height: 7px;
+  background-color: var(--color-green);
+}
+header .items .searchBar {
+  width: 207px;
+  background-color: rgba(255, 255, 255, 0.1215686275);
+  opacity: 0.5;
+  border: 2px solid var(--color-white);
+  border-radius: 25px;
+  padding: 0 15px;
+  transition: 0.6s ease-in;
+}
+header .items .searchBar:hover {
+  background-color: var(--color-dark-green);
+}
+header .items .searchBar form input, header .items .searchBar form button {
+  background: none;
+  outline: none;
+  border: none;
+}
+header .items .searchBar form input {
+  width: 153px;
+  height: 35px;
+}
+header .items .searchBar form input::-moz-placeholder {
+  color: var(--color-white);
+}
+header .items .searchBar form input:-ms-input-placeholder {
+  color: var(--color-white);
+}
+header .items .searchBar form input::placeholder {
+  color: var(--color-white);
+}
+header .items .searchBar form button {
+  padding: 0;
+}
+header .items .searchBar form button i {
+  color: var(--color-white);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.hero .left-section p {
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 18px;
+  font-weight: 300;
+}
+.hero .left-section .btn {
+  background: linear-gradient(140deg, #079258, #1E4C6E);
+  padding: 12px 55px;
+  border-radius: 0 25px 0 25px;
+}
+.hero .left-section .btn:hover {
+  background: linear-gradient(140deg, #1E4C6E, #079258) !important;
+}
+.hero .right-section {
+  width: 324px !important;
+  height: 296px !important;
+}
+.hero .right-section img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .hero .items {
+    flex-direction: column-reverse !important;
+  }
+  .hero .items .left-section {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 992px) and (min-width: 767px) {
+  .hero .items {
+    height: 81vh;
+  }
+  .hero .items .left-section {
+    width: 55% !important;
+  }
+}
+@media (max-width: 991px) {
+  body {
+    background-image: url(..//images/background2.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header .items {
+    position: relative;
+  }
+  header .items #toggleMenu {
+    position: absolute;
+    right: 0;
+    width: 46px;
+  }
+  header .items #toggleMenu i {
+    font-size: 25px !important;
+    color: var(--color-white);
+    transition: all 0.6s ease-in-out;
+  }
+  header .items #toggleMenu i:hover {
+    color: var(--color-dark-green);
+  }
+  header .items #toggleMenu.active i {
+    color: var(--color-dark-green);
+  }
+  header .items #navBar {
+    display: none !important;
+  }
+  header .items #navBar.active {
+    display: flex !important;
+    justify-content: center;
+    background-color: var(--color-dark-green);
+    width: 100%;
+    height: 369px;
+    position: absolute;
+    top: 100px;
+    padding: 45px 0 30px 0;
+  }
+  header .items #navBar.active a {
+    color: var(--color-white);
+  }
+  header .items #navBar.active a:hover, header .items #navBar.active a.active {
+    color: var(--color-green);
+  }
+  header .items #navBar li a {
+    padding-top: 10px !important;
+  }
+  header .items #navBar li a:hover::before, header .items #navBar li a.active::before {
+    content: "";
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    background-color: var(--color-green);
+  }
+  .hero .left-section h1 {
+    color: var(--color-blue) !important;
+    font-size: 30px !important;
+  }
+  .hero .left-section .btn {
+    margin-top: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background-image: url(..//images/background1.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header .items {
+    justify-content: space-between !important;
+  }
+  header .items #toggleMenu {
+    display: none;
+  }
+  header .items .navBar {
+    flex-direction: unset !important;
+    justify-content: space-between !important;
+  }
+  header .items .navBar ul {
+    flex-direction: unset !important;
+  }
+  .hero .items {
+    flex-direction: unset !important;
+  }
+  .hero .items .left-section {
+    text-align: left !important;
+  }
+  .hero .items .left-section h1 {
+    text-align: left !important;
+  }
+  .hero .items .right-section {
+    width: 530px !important;
+    height: 407px !important;
+  }
+}
+/*
+bootstrap 5 responsive screen sizes:
+
+* They include x-small which is between 0 and 576px.
+
+* Small, which has the sm class infix is 576px or larger. // Screens (Smaller Smartphones)
+
+* Medium, which has the md class infix is 768px or larger. // Screens (Tablets And Larger Smartphones)
+
+* Large, which has the lg class infix is 992px or larger.
+
+* Extra-large, which is infixed by xl , is 1200px or larger. // Screens (Laptops)
+
+* Extra extra large, which is infixed by xxl , is 1400px or larger. // Screens (Larger Desktops And Monitors)
+*//*# sourceMappingURL=style.css.map */

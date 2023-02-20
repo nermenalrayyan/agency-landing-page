@@ -1,0 +1,230 @@
+// Start Small Screens
+@media (max-width: 767px)
+{
+    .hero {
+        .items {
+            flex-direction: column-reverse!important;
+
+            .left-section {
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+// End Small Screens
+
+
+
+// Start Medium Screens (Tablets)
+@media (max-width: 992px) and (min-width: 767px){
+
+    .hero {
+        
+        .items {
+            height: 81vh;
+            
+            .left-section {
+                width: 55% !important;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        background-image: url(..//images/background2.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        .items {
+            position: relative;
+
+            // .searchBar {
+            //     // margin-top: 30px;
+            // }
+
+            #toggleMenu {
+                position: absolute;
+                // top: 12px;   
+                // left: 391px;
+                right: 0;
+                width: 46px;
+
+                i {
+                    font-size: 25px !important;
+                    color: var(--color-white);
+                    transition: all .6s ease-in-out;
+
+                    &:hover{
+                        color: var(--color-dark-green);
+                    }
+                }
+
+                &.active {
+                    i {
+                        color: var(--color-dark-green);
+                    }
+                }
+            }
+    
+            #navBar {
+                display: none !important;
+
+                &.active {
+                    display: flex !important;
+                    justify-content: center;
+                    background-color: var(--color-dark-green);
+                    width: 100%;
+                    height: 369px;
+                    position: absolute;
+                    top: 100px;
+                    // right: 500px;
+                    padding: 45px 0 30px 0;
+                
+
+                    a {
+                        color: var(--color-white);
+
+                        &:hover, &.active {
+                            color: var(--color-green);
+                        }
+                    }
+
+                }
+
+                li {
+                    
+                    a {
+                        padding-top: 10px !important;
+
+                        &:hover, &.active {
+                            &::before {
+                                content: "";
+                                border-top-left-radius: 50px !important;
+                                border-top-right-radius: 50px !important;
+                                border-bottom-left-radius: 0 !important;
+                                border-bottom-right-radius: 0 !important;
+                                // display: block;
+                                // position: absolute;
+                                // top: 0;
+                                // width: 3.6%;                
+                                // height: 7px;
+                                // padding: 3.5px;
+                                background-color: var(--color-green);
+                                // margin-bottom: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        .left-section {
+
+            h1 {
+                color: var(--color-blue) !important;
+                font-size: 30px !important;
+            }
+
+            .btn {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}
+// End Medium Screens (Tablets)
+    
+
+
+
+
+// Start Large Screens (Laptops)
+@media (min-width: 992px) {
+    body {
+        background-image: url(..//images/background1.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        .items {
+            justify-content: space-between !important;
+
+            #toggleMenu {
+                display: none;
+            }
+    
+            .navBar {
+                flex-direction: unset !important;
+                justify-content: space-between !important;
+
+                ul {
+                    flex-direction: unset !important;
+                    // align-items: flex-end !important;
+                    
+                }
+            }
+        }
+    }
+
+    // Start Hero {
+    .hero {
+        .items {
+            flex-direction: unset !important;
+            
+            .left-section {
+                text-align: left !important;
+
+                h1{
+                    text-align: left !important;
+                }
+            }
+            
+            .right-section {
+                width: 530px !important;
+                height: 407px !important;
+            }
+        }
+    }
+}
+// End Large Screens (Laptops)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+bootstrap 5 responsive screen sizes:
+
+* They include x-small which is between 0 and 576px.
+
+* Small, which has the sm class infix is 576px or larger. // Screens (Smaller Smartphones)
+
+* Medium, which has the md class infix is 768px or larger. // Screens (Tablets And Larger Smartphones)
+
+* Large, which has the lg class infix is 992px or larger.
+
+* Extra-large, which is infixed by xl , is 1200px or larger. // Screens (Laptops)
+
+* Extra extra large, which is infixed by xxl , is 1400px or larger. // Screens (Larger Desktops And Monitors)
+*/

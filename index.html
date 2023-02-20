@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Start meta -->
+        <!-- Start Charset -->
+        <meta charset="utf-8">
+
+        <!-- Start viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- viewport بساعد على تنسيق الموقع باختلاف احجام الشاشات -->
+
+        <!-- Start keywords -->
+        <meta name="keywords" content="هنا يوضع الكلمات المفتاحية الخاصة بمحتوى الموقع ">
+    
+        <!-- Start description -->
+        <meta name="description" content="هنا يكتب عبارة ترحيبية او وصف محتوى الموقع قبل دول المستخدم للموقع عن الصفحة البحث في المتصفح">
+        <!-- End meta -->
+
+        <!-- Start Title -->
+        <title></title>
+        <!-- End Title -->
+
+        <!-- start links -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <!-- المصدر: https://cdnjs.com/libraries/font-awesome -->
+
+        <!-- Start Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+        
+        <!-- Start Font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+        <!-- Start Style CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Start Normalize -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--normalize يجعل الصفحة سليمة و يصلح المشاكل الموجودة فيها / رابط الموقع https://necolas.github.io/normalize.css/-->
+
+        <!-- Start icon -->
+        <link rel="icon" href="images/icon/"><!--هنا يوضع لوقو الموقع الذي سوف يظهر  بجانب اسم الموقع في المتصفح-->
+        <!-- end links -->
+    </head>
+    <body>
+        <!-- المصدر: https://www.figma.com/file/DGL1Rr0n6rgdfTyypRILYj/Agency-Landing-Page-(Community)?node-id=0%3A1&t=mm1XnIxvBtnkO1PS-1 -->
+
+         <!-- Start Header -->
+        <header>
+            <div class="container">
+                <div class="row items align-items-center justify-content-center">
+                    <div class="col-lg-2 col-sm-12 logo"><img src="images/logo.svg" alt=""></div>
+                    
+                    <div id="toggleMenu" onclick="toggleMenu();">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="col-xl-9 col-lg-9 col-md-10 d-flex flex-column align-items-center justify-content-between navBar" id="navBar">
+                        <ul class="d-flex flex-column align-items-center">
+                            <li class="active"><a href="#" class="active">home</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">products</a></li>
+                            <li><a href="#">contact</a></li>
+                            <li><a href="#">about</a></li>
+                        </ul>
+
+                        <div class="searchBar" id="searchBar">
+                            <form action="" class="d-flex align-items-center justify-content-center">
+                                <input type="text" placeholder="Search" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero">
+            <div class="container">
+                <div class="row items align-items-center justify-content-between">
+                    <div class="col-xl-5 col-lg-5 col-md-6 text-center left-section">
+                        <h1 class="text-capitalize">build your business modern, faster and reliable.</h1>
+                        <p class="text-black mb-5 mt-4">Our team always ready to accept your challenge. To meet your goals is our main objective. Professional service, 24/7 client support, teamwork, and collaboration.</p>
+                        <button type="button" class="btn text-uppercase text-white mt-4">contact us</button>
+                    </div>
+                    <div class="col-xl-6 col-md-5 right-section">
+                        <img src="images/illustration.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- End Header -->
+        <!-- start links javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>      
+        <script src="js/custom.js"></script>
+    </body>
+</html>

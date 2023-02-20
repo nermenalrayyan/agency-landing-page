@@ -1,0 +1,40 @@
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1320px;
+  }
+}
+/*
+bootstrap 5 responsive screen sizes:
+
+* They include x-small which is between 0 and 576px.
+
+* Small, which has the sm class infix is 576px or larger. // Screens (Smaller Smartphones)
+
+* Medium, which has the md class infix is 768px or larger. // Screens (Tablets And Larger Smartphones)
+
+* Large, which has the lg class infix is 992px or larger.
+
+* Extra-large, which is infixed by xl , is 1200px or larger. // Screens (Laptops)
+
+* Extra extra large, which is infixed by xxl , is 1400px or larger. // Screens (Larger Desktops And Monitors)
+*/
